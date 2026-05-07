@@ -14,12 +14,13 @@ PImage htyre;
 boolean med,soft,hard;
 
 //Game variables
-float x,y;
+float x,y,sliderY,thick;
 int score, lives;
 float vx,vy,v;
 int highscore;
 
 void setup() {
+  sliderY = 575;
   v=1;
   med = hard = false;
   soft = true;
@@ -44,6 +45,9 @@ void setup() {
 }
 
 void draw() {
+  
+  thick = map(sliderY,500,750,50,250);
+  
   if (mode == INTRO)intro();
   else if (mode == GAME)game();
   else if (mode == GAMEOVER)gameover();

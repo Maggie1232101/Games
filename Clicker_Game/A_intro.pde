@@ -6,11 +6,22 @@ void intro(){
   tactR(width/2-200,height/2+200,200,100);
   fill(0);
   textSize(40);
+  textAlign(CENTER, CENTER);
   text("START",width/2-200,height/2+200);
   fill(255);
   tactR(width/2+200,height/2+200,200,100);
   fill(0);
   text("OPTIONS",width/2+200,height/2+200);
+  
+  //title
+  textSize(100);
+  textAlign(CENTER);
+  fill(#EAB51F);
+  text("PIRELLI PRESSER",width/2-10,height/2-90);
+  
+  textSize(100);
+  fill(0);
+  text("PIRELLI PRESSER", width/2,height/2-100);
 }
 
 void introClick(){
@@ -18,6 +29,8 @@ void introClick(){
     mode = GAME;
     lives = 3;
     score = 0;
+    x=width/2;
+    y=height/2;
     v=1;
   }
   if(mouseX>width/2+100 && mouseX<width/2+300 && mouseY>height/2+150 && mouseY<height/2 +250){

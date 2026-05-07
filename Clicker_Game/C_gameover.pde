@@ -1,8 +1,10 @@
 void gameover() {
-  background(0,0,255);
+  background(#FFB2B3);
   fill(255);
+  strokeWeight(10);
   tactR(width/2, height/2 +150, 200, 100);
   fill (0);
+  textAlign(CENTER, CENTER);
   text("BACK TO HOME", width/2, height/2 +150);
   strokeWeight(5);
   text ("SCORE: " +score, width/2, height/2 -150);
