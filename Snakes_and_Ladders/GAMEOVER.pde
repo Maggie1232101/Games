@@ -13,8 +13,13 @@ void gameover(){
     text("RED WINS!!!!!!",width/2,height/2);
   }
   
+  fill(255);
+  text("Click to Continue",width/2,height/2+100);
+  
+  
 }
 
 void gameoverClick(){
+  mode = INTRO;
   
 }

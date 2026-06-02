@@ -151,6 +151,19 @@ if (blueSliding) {
   }
 }
 
+if(AI==true && blueTurn == true && delay<0){
+  diceN = int(random(1,7));
+        if (bluePos + diceN <= 48) {
+        blueTarget = bluePos + diceN;
+        blueMoving = true;
+      }
+     
+      redTurn = true;
+      blueTurn = false;
+      delay = 10;
+    
+}
+
 }
 
 //-----------------------------------------------------------------------Clicks
@@ -168,7 +181,7 @@ void gameClick() {
       
       delay = 10;
     }
-    if (blueTurn && delay < 0) {
+    if (blueTurn && delay < 0 && AI == false) {
       if (bluePos + diceN <= 48) {
         blueTarget = bluePos + diceN;
         blueMoving = true;

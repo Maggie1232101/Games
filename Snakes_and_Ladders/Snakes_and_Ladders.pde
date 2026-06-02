@@ -2,6 +2,8 @@
 // snakes and ladders
 PFont font;
 
+boolean AI;
+
 float redx, redy, bluex, bluey;
 boolean blueClimbing = false;
 boolean redClimbing = false;
